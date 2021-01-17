@@ -1,0 +1,12 @@
+## Template para o cloudformation
+Description: Cria um bucket no S3
+
+Resources:
+  MeuBucketPastel:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: meu-primeiro-bucket-pastel
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
